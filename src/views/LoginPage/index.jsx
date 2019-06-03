@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Button from "../../common/components/Button"
 import "./index.styl"
 const src = require("../../resources/login_left_image.png")
-const srctop = require("../../resources/login_plane.png")
+const srctop = require("../../resources/login_rocket.png")
 
 export default class LoginPage extends Component {
 
