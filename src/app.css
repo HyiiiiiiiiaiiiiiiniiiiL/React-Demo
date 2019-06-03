@@ -1,0 +1,25 @@
+
+body {
+    background: #fff;
+    overflow: auto;
+    margin: 0;
+}
+
+.scrollBar {
+    overflow-y: auto;
+}
+
+.scrollBar::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+.scrollBar::-webkit-scrollbar-track {
+    background-color: transparent
+}
+.scrollBar::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: transparent;
+}
+.scrollBar:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(220, 220, 220,.8);
+}

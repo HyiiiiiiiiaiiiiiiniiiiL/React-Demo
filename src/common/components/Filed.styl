@@ -1,0 +1,53 @@
+@import "../common/_mixin.styl"
+.standard-field
+    position relative
+    vertical-align top
+    input,textarea
+        display inline-block
+        vertical-align top
+        border-radius 20px
+        background-color #fff
+        border 1px solid grayBorderColor
+        hh(40px)
+        font-size 12px
+        letter-spacing 1px
+        color blackColor
+        padding 0 24px
+        outline none
+        caret-color blueColor
+        &:focus
+            border-color blueColor
+        &.error-input
+            border-color redColor
+        &:disabled
+            font-size 13px
+            background-color transparent
+            border none
+            padding-left 0px
+        &::placeholder
+            color grayTextColor
+    .letter-counter
+        position absolute
+        right 12px
+        bottom 0
+        hh(36px)
+        &.positive
+            color grayTextColor
+        &.negative
+            color redColor
+    .iconfont.icon-guanbi.remove-row
+        position absolute
+        background-color grayTextColor
+        cursor pointer
+        color #fff
+        transform scale(0.7)
+        border-radius 4px
+        line-height 20px
+        font-size 12px
+        height 20px
+        width 20px
+        right -20px
+        top -3px
+        &:hover
+            color #fff
+            background-color blackColor

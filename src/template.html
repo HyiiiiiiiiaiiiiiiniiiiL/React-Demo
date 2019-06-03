@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<!-- 
+ git commit hash : <%=  htmlWebpackPlugin.options.ext.revision %>
+ build date: <%=  htmlWebpackPlugin.options.ext.buildDate %>
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Set render engine for 360 browser-->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <!-- iconfont -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_666609_mez4w06q88b.css">
+</head>
+
+<body>
+    <div id="app" style="height: 100vh;"></div>
+</body>
+
+<!-- 引入在线资源 -->
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?e6b468e82d21a3ff2da25df3e644aa3f";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+</html>

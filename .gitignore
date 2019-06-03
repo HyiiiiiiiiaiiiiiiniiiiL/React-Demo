@@ -1,0 +1,5 @@
+logs/
+.vscode/
+**/.vscode/**
+build
+node_modules
