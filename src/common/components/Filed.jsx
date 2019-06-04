@@ -67,11 +67,11 @@ class Filed extends Component {
     }
 
     render() {
-        const { error, total, onRemove } = this.props
+        const { error, total, onRemove, fieldClassName } = this.props
         const { counter } = this.state
         const num = total && total - counter || 0
         return (
-            <div className="standard-field">
+            <div className={"standard-field" + (fieldClassName ? " " + fieldClassName : "")}>
                 {this.filedTypeRender()}
                 {onRemove && <i className="iconfont icon-guanbi remove-row" onClick={this.onRemove} />}
                 {total ? <div className={"letter-counter" + (error ? " error-both " : "") +
@@ -96,7 +96,8 @@ Filed.propTypes = {
     onEnter: PropTypes.func,
     onRemove: PropTypes.func,
     error: PropTypes.string,
-    total: PropTypes.number
+    total: PropTypes.number,
+    fieldClassName: PropTypes.string
 }
 
 export default Filed
