@@ -19,11 +19,16 @@
     "sourceType": "module"
   },
   "plugins": [
-    "react"
+    "react",
+    "babel"
   ],
   "rules": {
     "semi": [
       0,
+      "never"
+    ],
+    "comma-dangle": [
+      "error",
       "never"
     ],
     "indent": [
@@ -37,8 +42,16 @@
       1,
       "windows"
     ],
+    "quotes": 0,
     "no-const-assign": "warn",
     "no-this-before-super": "warn",
+    "no-extra-semi": 2,
+    "no-multiple-empty-lines": [
+      1,
+      {
+        "max": 2
+      }
+    ],
     "no-undef": "warn",
     "no-unreachable": "warn",
     "no-unused-vars": "error",
@@ -46,6 +59,7 @@
     "valid-typeof": "warn",
     "no-console": "off",
     "space-before-blocks": "warn",
+    "no-trailing-spaces": "warn",
     "arrow-spacing": "warn",
     "comma-spacing": [
       "warn",
@@ -77,6 +91,7 @@
     "react/display-name": 0,
     "react/prop-types": "warn",
     "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
+    "react/jsx-uses-vars": "error",
+    "react/no-unescaped-entities": "off"
   }
 }
